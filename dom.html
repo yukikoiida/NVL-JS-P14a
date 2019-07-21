@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var pelis = [
+        {
+        "Nombre": "El señor de los anillos",
+        "Genero": "Acción"
+        },
+        {
+        "Nombre": "Regreso al Futuro",
+        "Genero": "Acción"
+        },
+        {
+        "Nombre": "Los increibles 2",
+        "Genero": "Animación"
+        },
+        {
+        "Nombre": "La guerra de las galaxias",
+        "Genero": "Sci-Fi"
+        },
+        {
+        "Nombre": "El diario de Bridget Jones",
+        "Genero": "Comedia"
+        },
+        {
+        "Nombre": "Indina Jones y la última cruzada",
+        "Genero": "Aventuras"
+        },
+        {
+        "Nombre": "Titanic",
+        "Genero": "Drama"
+        },
+        {
+        "Nombre": "Avatar",
+        "Genero": "Sci-fi"
+        },
+        {
+        "Nombre": "Shrek",
+        "Genero": "Animación"
+        },
+        {
+        "Nombre": "Cantando bajo la lluvia",
+        "Genero": "Musical"
+        },
+        {
+        "Nombre": "Mamma mia",
+        "Genero": "Musical"
+        },{
+        "Nombre": "Los Goonies",
+        "Genero": "Aventura"
+        }
+        ,{
+        "Nombre": "Piratas del Caribe: la maldición de la perla negra",
+        "Genero": "Aventuras"
+        },
+        {
+        "Nombre": "Ghost",
+        "Genero": "Drama"
+        },
+        {
+        "Nombre": "Imitación a la vida",
+        "Genero": "Drama"
+        },
+        {
+        "Nombre": "Love Actually",
+        "Genero": "Romántica"
+        },
+        {
+        "Nombre": "La momia",
+        "Genero": "Aventuras"
+        },
+        {
+        "Nombre": "Men in Black",
+        "Genero": "Sci-fi"
+        },
+        {
+        "Nombre": "Dogma",
+        "Genero": "Comedia"
+        },
+        {
+        "Nombre": "La bella durmiente",
+        "Genero": "Animación"
+        }
+        ];
+        var peliculas = JSON.stringify(pelis);
+        var ul =("<ul></ul>") 
+        
+        for (var i=0; i < peliculas.length; i++){
+            var li = ("<li></li>")
+            li.append(peliculas[i].Nombre + "( " + peliculas[i].Genero + " )")
+            
+            switch (peliculas[i].Genero){
+                case Acción:
+                    li.append("<li><img src=src/accion.jpg></li>")
+                case Animación:
+                    li.append("<li><img src=src/animacion.jpg></li>")
+                case Aventuras:
+                    li.append("<li><img src=src/aventuras.jpg></li>")
+                case Comedia:
+                    li.append("<li><img src=src/coemdia.jpg></li>")
+                case Drama:
+                    li.append("<li><img src=src/drama.jpg></li>")
+                case Musical:
+                    li.append("<li><img src=src/musical.jpg></li>")
+                case Romántica:
+                    li.append("<li><img src=src/romantica.jpg></li>")
+                case Sfi-Fi:
+                    li.append("<li><img src=src/sciFi.jpg></li>")
+            }
+
+        }
+        $("body").append(ul);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
